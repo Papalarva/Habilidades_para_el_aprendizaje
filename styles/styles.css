@@ -13,3 +13,20 @@ body {
     color: #2A7C6F;
     font-family: Avenir Light;
 }
+
+.header__nav {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+.header__lista {
+    list-style: none;
+}
+
+.header__enlace {
+    text-decoration: none;
+    color: #2A7C6F;
+}
