@@ -1,0 +1,15 @@
+/* Estiloss generales */
+@font-face {
+    font-family: Avenir Light;
+    src: url(../src/fonts/Avenir\ Light.ttf);
+
+    font-family: Brandon grotesque;
+    src: url(../src/fonts/Brandon\ grotesque.otf);
+}
+
+
+body {
+    background-color: #FFFEFC;
+    color: #2A7C6F;
+    font-family: Avenir Light;
+}
