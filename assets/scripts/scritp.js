@@ -9,15 +9,19 @@ window.addEventListener("load", function(){
     }, 1000);
 })
   document.addEventListener( 'DOMContentLoaded', function() {
-    var splide = new Splide( '.splide',{
+    var splide = new Splide( '.habilidades__splide',{
+        arrows: false,
         type: "loop",
         autoplay: "true",
-        arrow: "true",
+        speed: 3000,
+        pauseOnHover: false,
+        pauseOnFocus: true,
         pagination: false,
-        perPage: 2, 
+        perPage: 3, 
         perMove: 1,
         interval: 3000,
         gap: 20,
+        with: '24rem',
     } );
     splide.mount();
   } );
