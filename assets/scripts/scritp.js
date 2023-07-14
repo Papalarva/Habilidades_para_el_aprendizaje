@@ -10,12 +10,6 @@ window.addEventListener("load", function(){
 })
   document.addEventListener( 'DOMContentLoaded', function() {
     var splide = new Splide( '.habilidades__splide',{
-        breakpoints: {
-            640: {
-                perPage: 2,
-        autoplay: "true",
-            },
-        },
         arrows: false,
         autoplay: "false",
         type: "loop",
