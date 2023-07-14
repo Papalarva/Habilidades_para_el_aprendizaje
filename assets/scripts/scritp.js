@@ -10,14 +10,20 @@ window.addEventListener("load", function(){
 })
   document.addEventListener( 'DOMContentLoaded', function() {
     var splide = new Splide( '.habilidades__splide',{
-        arrows: false,
-        type: "loop",
+        breakpoints: {
+            640: {
+                perPage: 2,
         autoplay: "true",
+            },
+        },
+        arrows: false,
+        autoplay: "false",
+        type: "loop",
         speed: 3000,
         pauseOnHover: false,
         pauseOnFocus: true,
         pagination: false,
-        perPage: 3, 
+        perPage: 5, 
         perMove: 1,
         interval: 3000,
         gap: 20,
