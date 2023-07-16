@@ -1,6 +1,5 @@
 @media (min-width: 576px) {
     .header {
-        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -17,7 +16,7 @@
         transform: translateY(0);
         background-color: transparent;
     }
-    .menu__enlace{padding: 0 0 25px;}
+    .menu__enlace{padding: 25px 0;}
     .menu__enlace:hover{
         background-color: transparent; 
         color: var(--verde);
@@ -42,8 +41,6 @@
 }
 
 @media (min-width: 576px) and (max-width: 991.98px)  {
-    body{background: orange;}
-    
     .articulos{
         width: 80%;
         margin: 50px auto;
@@ -51,7 +48,6 @@
 }
 
 @media (min-width: 991.98px) and (max-width: 1199.98px) {
-    body{background: blue;}
     .introduccion__parrafo{width: 70%; 
         line-height: 2;
     }
