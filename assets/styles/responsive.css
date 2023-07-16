@@ -1,29 +1,77 @@
-
-@media (min-width: 576px) and (max-width: 991.98px)  {
-    body{background: orange;}
+@media (min-width: 576px) {
+    .header {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
     .menu__boton{display: none;}
     .menu {
         flex-direction: row;
-        justify-content: space-evenly;
+        gap: 100px;
+        justify-content: center;
+        height: min-content;
+        position: relative;
         opacity: 1;
         pointer-events: all;
         transform: translateY(0);
+        background-color: transparent;
+    }
+    .menu__enlace{padding: 0 0 25px;}
+    .menu__enlace:hover{
+        background-color: transparent; 
+        color: var(--verde);
+        transition: all 1s ease;
+        filter: saturate(200%);
     }
     .header__separador{
-        width: 50%;
+        width: 75%;
         margin: auto;
-        height: 2px;
-        background-color: var(--verde);   
+        height: 1px;
+        background-color: var(--verde);  
         display: block;
         position: relative;
+        border-style: none;
+    }
+    .header__imagen {width: auto;}
+    .header__titulo{font-size: 4rem;}
+    .introduccion__titulo {font-size: 3rem;}
+    .articulos{flex-direction: row;}
+    .articulos__imagen{width: 50%; align-items: center; display: flex;}
+    .articulos__texto{width: 50%;}
+}
+
+@media (min-width: 576px) and (max-width: 991.98px)  {
+    body{background: orange;}
+    
+    .articulos{
+        width: 80%;
+        margin: 50px auto;
     }
 }
 
 @media (min-width: 991.98px) and (max-width: 1199.98px) {
     body{background: blue;}
+    .introduccion__parrafo{width: 70%; 
+        line-height: 2;
+    }
+    .articulos{
+        width: 75%;
+        margin: 50px auto;
+    }
 }
 
 @media (min-width: 1199.98px)  {
-    body{background: red;}
+    .menu {gap: 15%;}
+    .header__titulo{font-size: 4.5rem; width: 60%; margin: auto;}
+    .introduccion__parrafo{width: 50%;line-height: 2;}
+    .introduccion__habilidades{
+        height: 300;
+        width: 300;
+    }
+    .articulos{
+        width: 60%;
+        margin: 50px auto;
+    }
 }
 
