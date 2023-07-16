@@ -216,7 +216,7 @@ body {
     background-color: var(--blanco);
 }
 .articulos__parrafos {
-    max-height: 300px;
+    max-height: 250px;
     overflow-y: auto;
 }
 .articulos__enlace {
@@ -246,6 +246,6 @@ body {
 .footer {
     font-family: var(--font__titulos);
     text-align: center;
-    margin: 50px 0 25px 0;
+    margin: 50px 10px 25px 10px;
     font-weight: 900;
 }
