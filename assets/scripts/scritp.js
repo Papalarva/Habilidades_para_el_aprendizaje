@@ -44,10 +44,16 @@ menu.addEventListener("click", cerrarMenu);
 
 document.addEventListener( 'DOMContentLoaded', function() {
     var splide = new Splide( '.habilidades__splide',{
+        mediaQuery: 'min',
         breakpoints: {
-            640: {
+            1199.98: {
+                perPage: 4,
+            },
+            991.98: {
+                perPage: 3,
+            },
+            650: {
                 perPage: 2,
-        autoplay: "true",
             },
         },
         arrows: false,
@@ -57,10 +63,9 @@ document.addEventListener( 'DOMContentLoaded', function() {
         pauseOnHover: false,
         pauseOnFocus: true,
         pagination: false,
-        perPage: 5, 
         perMove: 1,
         interval: 2500,
         gap: 20,
     } );
     splide.mount();
-  } );
+} );
