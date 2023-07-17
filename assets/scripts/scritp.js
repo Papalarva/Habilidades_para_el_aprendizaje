@@ -9,37 +9,26 @@ window.addEventListener("load", function(){
     }, 1000);
 })
 
-// var menu__mostrar = document.querySelector(".menu__boton");
-// var menu = document.querySelector(".menu");
-
-// function menu__movil() {
-//     contenedor__menu.classList.toggle("toggle__contenedor__menu");
-//     menu.classList.toggle("toggle__menu");
-//     document.querySelector(".body").style.overflowY = "hidden";
-// }
-// menu__mostrar.addEventListener("click", menu__movil);
-
-// function close__menu__movil() {
-//     contenedor__menu.classList.remove("toggle__contenedor__menu");
-//     menu.classList.remove("toggle__menu");
-//     document.querySelector(".body").style.overflowY = "scroll";
-// }
-// contenedor__menu.addEventListener("click", close__menu__movil);
-
-
 const menu__mostrar = document.querySelector(".menu__boton");
 var menu = document.querySelector(".menu");
 
-function mostrarMenu() {
-    menu.classList.toggle("toggle__menu");
-}
-
+function mostrarMenu() {menu.classList.toggle("toggle__menu");}
 menu__mostrar.addEventListener("click", mostrarMenu);
 
-function cerrarMenu() {
-    menu.classList.remove("toggle__menu");
-}
+function cerrarMenu() {menu.classList.remove("toggle__menu");}
 menu.addEventListener("click", cerrarMenu);
+
+// const btn__mostrar = document.querySelector(".articulos__enlace");
+
+// function articulo() {
+//  articulos__capa = document.querySelector(".articulos__enlace").nextSibling;
+// console.log(articulos__capa);
+//     articulos__capa.classList.toggle("toggle__articulo");
+// }
+
+// btn__mostrar.addEventListener("click", articulo);
+
+
 
 
 document.addEventListener( 'DOMContentLoaded', function() {
