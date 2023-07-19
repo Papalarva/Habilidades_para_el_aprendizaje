@@ -1,3 +1,5 @@
+/* FUNCION PARA LOGRAR EL EFECTOS LOADER */
+
 window.addEventListener("load", function(){
     setTimeout(() => {
         loader = this.document.querySelector(".loader");
@@ -9,6 +11,8 @@ window.addEventListener("load", function(){
     }, 1000);
 })
 
+/* FUNCIONES PARA ABRIR Y CERRAR EL MENU MOVIL */
+
 const menu__mostrar = document.querySelector(".menu__boton");
 var menu = document.querySelector(".menu");
 
@@ -18,58 +22,7 @@ menu__mostrar.addEventListener("click", mostrarMenu);
 function cerrarMenu() {menu.classList.remove("toggle__menu");}
 menu.addEventListener("click", cerrarMenu);
 
-var articulos = document.querySelectorAll(".articulos__enlace");
-var articulo = articulos__enlace.nextElementSibling;
-console.log(articulo);
-console.log(articulos);
-
-function abrirArticulo(){
-    articulo.classList.toggle("toggle__articulo");
-}
-articulos.addEventListener("click", abrirArticulo);
-
-// var articuloUno = document.getElementById("articuloUno");
-// console.log(articuloUno);
-// var articulo1 = document.getElementById("articuloUno").nextElementSibling;
-// console.log(articulo1);
-var articuloUno = document.querySelector(".articuloUno");
-var articulos = document.querySelector(".articuloUno").nextElementSibling;
-
-function abrirArticulo(){articulo1.classList.toggle("toggle__articulo")}
-articuloUno.addEventListener("click", abrirArticulo);
-
-function cerrarArticulo(){
-    articulo1.classList.remove("toggle__articulo")
-}
-articulo1.addEventListener("click", cerrarArticulo)
-
-// var articulos = document.querySelectorAll(".articulos__enlace");
-// var articulo = articulos__enlace.nextElementSibling;
-// console.log(articulo);
-// console.log(articulos);
-
-// function abrirArticulo(){
-//     articulo.classList.toggle("toggle__articulo");
-// }
-// articulos.addEventListener("click", abrirArticulo);
-
-// // var articuloUno = document.getElementById("articuloUno");
-// // console.log(articuloUno);
-// // var articulo1 = document.getElementById("articuloUno").nextElementSibling;
-// // console.log(articulo1);
-// var articuloUno = document.querySelector(".articuloUno");
-// var articulos = document.querySelector(".articuloUno").nextElementSibling;
-
-// function abrirArticulo(){articulo1.classList.toggle("toggle__articulo")}
-// articuloUno.addEventListener("click", abrirArticulo);
-
-// function cerrarArticulo(){
-//     articulo1.classList.remove("toggle__articulo")
-// }
-// articulo1.addEventListener("click", cerrarArticulo)
-
-
-
+/* CONSTRUCTOR PARA EL SLIDER DE LA INTRODUCCION */
 
 document.addEventListener( 'DOMContentLoaded', function() {
     var splide = new Splide( '.habilidades__splide',{
@@ -98,3 +51,28 @@ document.addEventListener( 'DOMContentLoaded', function() {
     } );
     splide.mount();
 } );
+
+
+/* FUNCIONES PARA ABRIR LOS ARTICULOS OCULTOS */
+
+var articulo = document.querySelectorAll(".articulos__enlace");
+
+function abrirArticulo(event) {
+    var articuloContenido = event.target.nextElementSibling;
+    articuloContenido.classList.toggle("toggle__articulo");
+    document.querySelector(".body").style.overflowY = "hidden";
+}
+
+function cerrarArticulo(event) {
+    var articuloContenido = event.currentTarget;
+    articuloContenido.classList.remove("toggle__articulo");
+    document.querySelector(".body").style.overflowY = "scroll";
+}
+
+articulo.forEach(function(articulo) {
+    articulo.addEventListener("click", abrirArticulo);
+    articulo.nextElementSibling.addEventListener("click", cerrarArticulo);
+});
+
+
+
