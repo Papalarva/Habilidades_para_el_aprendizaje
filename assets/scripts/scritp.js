@@ -18,18 +18,55 @@ menu__mostrar.addEventListener("click", mostrarMenu);
 function cerrarMenu() {menu.classList.remove("toggle__menu");}
 menu.addEventListener("click", cerrarMenu);
 
+var articulos = document.querySelectorAll(".articulos__enlace");
+var articulo = articulos__enlace.nextElementSibling;
+console.log(articulo);
+console.log(articulos);
 
-var mostrarArticulo = document.querySelector(".articulos__enlace");
-var articulos = document.querySelector(".articulos__enlace").nextElementSibling;
+function abrirArticulo(){
+    articulo.classList.toggle("toggle__articulo");
+}
+articulos.addEventListener("click", abrirArticulo);
 
-function abrirArticulo(){articulos.classList.toggle("toggle__articulo")}
-mostrarArticulo.addEventListener("click", abrirArticulo);
+// var articuloUno = document.getElementById("articuloUno");
+// console.log(articuloUno);
+// var articulo1 = document.getElementById("articuloUno").nextElementSibling;
+// console.log(articulo1);
+var articuloUno = document.querySelector(".articuloUno");
+var articulos = document.querySelector(".articuloUno").nextElementSibling;
+
+function abrirArticulo(){articulo1.classList.toggle("toggle__articulo")}
+articuloUno.addEventListener("click", abrirArticulo);
 
 function cerrarArticulo(){
-    articulos.classList.remove("toggle__articulo")
-    var mostrarArticulo = document.querySelector(".articulos__enlace");
+    articulo1.classList.remove("toggle__articulo")
 }
-articulos.addEventListener("click", cerrarArticulo)
+articulo1.addEventListener("click", cerrarArticulo)
+
+// var articulos = document.querySelectorAll(".articulos__enlace");
+// var articulo = articulos__enlace.nextElementSibling;
+// console.log(articulo);
+// console.log(articulos);
+
+// function abrirArticulo(){
+//     articulo.classList.toggle("toggle__articulo");
+// }
+// articulos.addEventListener("click", abrirArticulo);
+
+// // var articuloUno = document.getElementById("articuloUno");
+// // console.log(articuloUno);
+// // var articulo1 = document.getElementById("articuloUno").nextElementSibling;
+// // console.log(articulo1);
+// var articuloUno = document.querySelector(".articuloUno");
+// var articulos = document.querySelector(".articuloUno").nextElementSibling;
+
+// function abrirArticulo(){articulo1.classList.toggle("toggle__articulo")}
+// articuloUno.addEventListener("click", abrirArticulo);
+
+// function cerrarArticulo(){
+//     articulo1.classList.remove("toggle__articulo")
+// }
+// articulo1.addEventListener("click", cerrarArticulo)
 
 
 
