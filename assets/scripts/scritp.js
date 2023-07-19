@@ -18,15 +18,18 @@ menu__mostrar.addEventListener("click", mostrarMenu);
 function cerrarMenu() {menu.classList.remove("toggle__menu");}
 menu.addEventListener("click", cerrarMenu);
 
-// const btn__mostrar = document.querySelector(".articulos__enlace");
 
-// function articulo() {
-//  articulos__capa = document.querySelector(".articulos__enlace").nextSibling;
-// console.log(articulos__capa);
-//     articulos__capa.classList.toggle("toggle__articulo");
-// }
+var mostrarArticulo = document.querySelector(".articulos__enlace");
+var articulos = document.querySelector(".articulos__enlace").nextElementSibling;
 
-// btn__mostrar.addEventListener("click", articulo);
+function abrirArticulo(){articulos.classList.toggle("toggle__articulo")}
+mostrarArticulo.addEventListener("click", abrirArticulo);
+
+function cerrarArticulo(){
+    articulos.classList.remove("toggle__articulo")
+    var mostrarArticulo = document.querySelector(".articulos__enlace");
+}
+articulos.addEventListener("click", cerrarArticulo)
 
 
 

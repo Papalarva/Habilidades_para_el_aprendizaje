@@ -297,7 +297,9 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    display: none;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 1s ease;
 }
 .articulos__flotantes{
     height: 100%;
@@ -305,11 +307,17 @@ body {
 }
 .articuloFlotante__titulo{font-family: var(--font__titulos); font-size: 2rem;}
 .articuloFlotante__subtitulo{font-weight: 900;}
-.toggle__articulo{display: block;}
+.toggle__articulo{
+    transition: all 1s ease;
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
+}
 
 .footer {
     font-family: var(--font__titulos);
     text-align: center;
     margin: 50px 10px 25px 10px;
     font-weight: 900;
+    
 }
