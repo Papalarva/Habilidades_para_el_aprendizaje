@@ -55,7 +55,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
 
 /* FUNCIONES PARA ABRIR LOS ARTICULOS OCULTOS */
 
-var articulo = document.querySelectorAll(".articulos__enlace");
+var articulo = document.querySelectorAll(".enlace__articulo");
 
 function abrirArticulo(event) {
     var articuloContenido = event.target.nextElementSibling;

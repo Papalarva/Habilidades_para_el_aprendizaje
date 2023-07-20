@@ -313,12 +313,24 @@ body {
     overflow: auto;
 }
 .articuloFlotante__titulo{font-family: var(--font__titulos); font-size: 2rem;}
-.articuloFlotante__subtitulo{font-weight: 900;}
+.articuloFlotante__subtitulo{font-weight: 900; font-size: 1.15rem;}
 .toggle__articulo{
     transition: all 1s ease;
     opacity: 1;
     pointer-events: all;
     transform: translateY(0);
+}
+.geometria__palillos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.geometria__img{
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
 }
 
 .footer {
