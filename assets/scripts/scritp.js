@@ -11,17 +11,6 @@ window.addEventListener("load", function(){
     }, 1000);
 })
 
-/* FUNCIONES PARA ABRIR Y CERRAR EL MENU MOVIL */
-
-const menu__mostrar = document.querySelector(".menu__boton");
-var menu = document.querySelector(".menu");
-
-function mostrarMenu() {menu.classList.toggle("toggle__menu");}
-menu__mostrar.addEventListener("click", mostrarMenu);
-
-function cerrarMenu() {menu.classList.remove("toggle__menu");}
-menu.addEventListener("click", cerrarMenu);
-
 /* CONSTRUCTOR PARA EL SLIDER DE LA INTRODUCCION */
 
 document.addEventListener( 'DOMContentLoaded', function() {
@@ -54,25 +43,13 @@ document.addEventListener( 'DOMContentLoaded', function() {
 
 
 /* FUNCIONES PARA ABRIR LOS ARTICULOS OCULTOS */
-
-var articulo = document.querySelectorAll(".enlace__articulo");
-
-function abrirArticulo(event) {
-    var articuloContenido = event.target.nextElementSibling;
-    articuloContenido.classList.toggle("toggle__articulo");
-    document.querySelector(".body").style.overflowY = "hidden";
-}
-
-function cerrarArticulo(event) {
-    var articuloContenido = event.currentTarget;
-    articuloContenido.classList.remove("toggle__articulo");
-    document.querySelector(".body").style.overflowY = "scroll";
-}
-
-articulo.forEach(function(articulo) {
-    articulo.addEventListener("click", abrirArticulo);
-    articulo.nextElementSibling.addEventListener("click", cerrarArticulo);
-});
-
-
-
+function toggleMenu(menuId) {
+    const menus = document.querySelectorAll('.menu');
+    menus.forEach((menu) => {
+      if (menu.id === menuId) {
+        menu.classList.toggle('show');
+      } else {
+        menu.classList.remove('show');
+      }
+    });
+  }

@@ -1,104 +1,25 @@
 @media (min-width: 576px) {
-    .header {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        gap: 40px;
+    .capitulos__capitulo {
+        width: calc(50vw/2 - 20px);
+        height: calc(50vw/2 - 20px);
     }
-    .menu__boton{display: none;}
-    .menu {
-        flex-direction: row;
-        gap: 100px;
-        justify-content: center;
-        height: min-content;
-        position: relative;
-        opacity: 1;
-        pointer-events: all;
-        transform: translateY(0);
-        background-color: transparent;
-    }
-    .menu__enlace{padding: 25px 0;}
-    .menu__enlace:hover{
-        background-color: transparent; 
-        color: var(--verde);
-        transition: all 1s ease;
-        filter: saturate(200%);
-    }
-    .header__separador{
-        width: 75%;
-        margin: auto;
-        height: 1px;
-        background-color: var(--verde);  
-        display: block;
-        position: relative;
-        border-style: none;
-    }
-    .header__imagen {width: auto;}
-    .header__titulo{font-size: 4rem;}
-    .introduccion__titulo {font-size: 3rem;}
-    .articulos{flex-direction: row;}
-    .articulos__imagen{width: 50%; align-items: center; display: flex;}
-    .articulos__texto{width: 50%;}
+    .capitulos__titulo {font-size: 1rem;}
+    .articulos{margin: auto;}
 }
 
 @media (min-width: 576px) and (max-width: 991.98px)  {
-    .articulos{
-        width: 80%;
-        margin: 50px auto;
-    }
-    .main, .articulos__flotantes {
-        width: 80%;
-        margin: 20px auto;
-        padding: 50px;
-    }
-    .main__titulo, .articuloFlotante__titulo{font-size: 3rem;}
-    .main__sobremi{padding: 0;}
-    .main__img--sobremi{height: 500px;}
-    .main__parrafo {pad: 50px;}
-    .geometria__img{width: 150px; height: 150px;}
+    .header__titulo {font-size: 3rem;}
+    .introduccion__titulo{font-size: 2.5rem;}
 }
 
 @media (min-width: 991.98px) and (max-width: 1199.98px) {
-    .introduccion__parrafo{width: 70%; 
-        line-height: 2;
-    }
-    .articulos{
-        width: 75%;
-        margin: 50px auto;
-    }
-    .main, .articulos__flotantes {
-        width: 75%;
-        margin: 20px auto;
-        padding: 75px;
-    }
-    .main__parrafo{padding: 75px;}
-    .main__titulo, .articuloFlotante__titulo{font-size: 3.5rem;}
-    .main__sobremi{padding: 0;}
-    .main__img--sobremi{height: 450px;}
-    .geometria__img{width: 250px; height: 250px;}
+    .header__titulo {font-size: 4rem;}
+    .introduccion__titulo{font-size: 3.5rem;}
+    
 }
 
 @media (min-width: 1199.98px)  {
-    .menu {gap: 15%;}
-    .header__titulo{font-size: 4.5rem; width: 60%; margin: auto;}
-    .introduccion__parrafo{width: 50%;line-height: 2;}
-    .introduccion__habilidades{
-        height: 300;
-        width: 300;
-    }
-    .articulos{
-        width: 60%;
-        margin: 50px auto;
-    }
-    .main, .articulos__flotantes {
-        width: 60%;
-        margin: 20px auto;
-        padding: 100px;
-    }
-    .main__parrafo{padding: 100px;}
-    .main__titulo{font-size: 4rem;}
-    .main__sobremi{padding: 0;}
-    .main__img--sobremi{height: 450px;}
-    .geometria__img{width: 250px; height: 250px;}
+    .header__titulo {font-size: 5rem;}
+    .introduccion__titulo{font-size: 4.5rem;}
 }
 
