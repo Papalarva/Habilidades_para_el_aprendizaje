@@ -23,3 +23,7 @@
     .introduccion__titulo{font-size: 4.5rem;}
 }
 
+@media (min-width: 1400px) {
+    .header__titulo {font-size: 8rem;}
+    .articulos{max-width: 1000px;}
+}
